@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-      <!-- the font and icon links -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com"
+            crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <!-- the font and icon links -->
 
-      <link rel="stylesheet" href="style.css/style.css">
-</head>
-<body>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="style.css/style.css">
+    </head>
+    <body>
         <nav>
             <div class="container nav-container">
                 <div class="logo">Logo</div>
                 <ul class="nav-list">
-                    <li class="list-item active"><a href="#">Home</a></li>
+                    <li class="list-item active"><a
+                            href="#">Home</a></li>
                     <li class="list-item"><a href="#">About</a></li>
-                    <li class="list-item"><a href="#">Properties</a></li>
+                    <li class="list-item"><a
+                            href="#">Properties</a></li>
                     <li class="list-item"><a href="#">Pages</a></li>
                     <li class="list-item"><a href="#">Agents</a></li>
                     <li class="list-item"><a href="#">Contact</a></li>
                 </ul>
-                <a href="#" class="nav-btn btn"><span>Get started</span></a>
+                <a href="#" class="nav-btn btn"><span>Get
+                        started</span></a>
+                        <span class="material-symbols-outlined">
+                            menu
+                            </span>
             </div>
         </nav>
 
@@ -35,13 +49,17 @@
                 <div class="home-content">
                     <h6>a new way to find properties</h6>
                     <h1>find the most suitable property</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, eveniet ex. Vel non aperiam quis, soluta quo voluptatum perspiciatis tempore!</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit. Voluptatem, eveniet ex. Vel
+                        non aperiam quis, soluta quo voluptatum
+                        perspiciatis tempore!</p>
                     <a href="#" class="btn"><span>Explore</span></a>
                 </div>
                 <div class="search-section">
                     <div class="form-navigation">
                         <ul>
-                            <li class="firstbtn search-btn active">buy</li>
+                            <li
+                                class="firstbtn search-btn active">buy</li>
                             <li class="secondbtn search-btn">rent</li>
                             <li class="thirdbtn search-btn">sell</li>
                         </ul>
@@ -49,390 +67,1049 @@
 
                     <div class="first-form">
                         <form action="#">
-                        <div class="input-field">
-                            <span class="material-symbols-outlined">
-                                pin_drop
+                            <div class="input-field">
+                                <span
+                                    class="material-symbols-outlined">
+                                    pin_drop
                                 </span>
-                            <div class="input-container">
-                                <span>location</span>
-                                <input type="text" placeholder="Choose the location">
+                                <div class="input-container">
+                                    <span>location</span>
+                                    <input type="text"
+                                        placeholder="Choose the location">
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-field">
-                            <span class="material-symbols-outlined">
-                                real_estate_agent
-                                </span> 
-                            <div class="input-container">
-                                <span>property type</span>
-                                <select id="cars" name="cars">
-                                    <option value="volvo">select property type</option>
-                                    <option value="saab">Residential Properties</option>
-                                    <option value="mercedes">Commercial Properties</option>
-                                    <option value="audi">Industrial Properties</option>
-                                    <option value="audi">Land</option>
-                                    <option value="audi">Special Purpose Properties</option>
-                                    <option value="audi">Investment Properties</option>
-                                    <option value="audi">Luxury Properties</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="input-field">
-                            <span class="material-symbols-outlined">
-                                price_change
+                            <div class="input-field">
+                                <span
+                                    class="material-symbols-outlined">
+                                    real_estate_agent
                                 </span>
-                            <div class="input-container">
-                                <span>price range</span>
-                                <select id="cars" name="cars">
-                                    <option value="volvo">Select price range</option>
-                                    <option value="saab">$50,000-$200,000</option>
-                                    <option value="mercedes"> $200,000 - $500,000</option>
-                                    <option value="audi"> $500,000 to $1m</option>
-                                    <option value="audi">$1m-$10m</option>
-                                    <option value="audi">$10m above</option>
-                                </select>
+                                <div class="input-container">
+                                    <span>property type</span>
+                                    <select id="cars" name="cars">
+                                        <option value="volvo">select
+                                            property type</option>
+                                        <option
+                                            value="saab">Residential
+                                            Properties</option>
+                                        <option
+                                            value="mercedes">Commercial
+                                            Properties</option>
+                                        <option
+                                            value="audi">Industrial
+                                            Properties</option>
+                                        <option
+                                            value="audi">Land</option>
+                                        <option value="audi">Special
+                                            Purpose
+                                            Properties</option>
+                                        <option
+                                            value="audi">Investment
+                                            Properties</option>
+                                        <option value="audi">Luxury
+                                            Properties</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-field">
-                            <span class="material-symbols-outlined">
-                                fullscreen_exit
+                            <div class="input-field">
+                                <span
+                                    class="material-symbols-outlined">
+                                    price_change
                                 </span>
-                            <div class="input-container">
-                                <span>property size</span>
-                            <select id="cars" name="cars">
-                                <option value="volvo">Select property size</option>
-                                <option value="saab">under  1,000</option>
-                                <option value="saab">1,000 to 2,500 square feet</option>
-                                <option value="saab">2,500 to 5,000 square feet</option>
-                                <option value="saab">5,000 to 10,000 square feet</option>
-                                <option value="saab">above 10,000 square feet</option>
-                                
-                            </select>
+                                <div class="input-container">
+                                    <span>price range</span>
+                                    <select id="cars" name="cars">
+                                        <option value="volvo">Select
+                                            price range</option>
+                                        <option
+                                            value="saab">$50,000-$200,000</option>
+                                        <option value="mercedes">
+                                            $200,000 -
+                                            $500,000</option>
+                                        <option value="audi"> $500,000
+                                            to $1m</option>
+                                        <option
+                                            value="audi">$1m-$10m</option>
+                                        <option value="audi">$10m
+                                            above</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
+                            <div class="input-field">
+                                <span
+                                    class="material-symbols-outlined">
+                                    fullscreen_exit
+                                </span>
+                                <div class="input-container">
+                                    <span>property size</span>
+                                    <select id="cars" name="cars">
+                                        <option value="volvo">Select
+                                            property size</option>
+                                        <option value="saab">under
+                                            1,000</option>
+                                        <option value="saab">1,000 to
+                                            2,500 square feet</option>
+                                        <option value="saab">2,500 to
+                                            5,000 square feet</option>
+                                        <option value="saab">5,000 to
+                                            10,000 square
+                                            feet</option>
+                                        <option value="saab">above
+                                            10,000 square
+                                            feet</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="btn"><span class="material-symbols-outlined">
+search
+</span></button>
                         </form>
                     </div>
-
 
                     <div class="second-form">
                         <form action="#">
-                        <div class="input-field">
-                            <span class="material-symbols-outlined">
-                                pin_drop
+                            <div class="input-field">
+                                <span
+                                    class="material-symbols-outlined">
+                                    pin_drop
                                 </span>
-                            <div class="input-container">
-                                <span>location</span>
-                                <input type="text" placeholder="Choose the location">
+                                <div class="input-container">
+                                    <span>location</span>
+                                    <input type="text"
+                                        placeholder="Choose the location">
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-field">
-                            <span class="material-symbols-outlined">
-                                real_estate_agent
+                            <div class="input-field">
+                                <span
+                                    class="material-symbols-outlined">
+                                    real_estate_agent
                                 </span>
-                            <div class="input-container">
-                                <span>property type</span>
-                                <select id="cars" name="cars">
-                                    <option value="volvo">select property type</option>
-                                    <option value="saab">Residential Properties</option>
-                                    <option value="mercedes">Commercial Properties</option>
-                                    <option value="audi">Industrial Properties</option>
-                                    <option value="audi">Land</option>
-                                    <option value="audi">Special Purpose Properties</option>
-                                    <option value="audi">Investment Properties</option>
-                                    <option value="audi">Luxury Properties</option>
-                                </select>
+                                <div class="input-container">
+                                    <span>property type</span>
+                                    <select id="cars" name="cars">
+                                        <option value="volvo">select
+                                            property type</option>
+                                        <option
+                                            value="saab">Residential
+                                            Properties</option>
+                                        <option
+                                            value="mercedes">Commercial
+                                            Properties</option>
+                                        <option
+                                            value="audi">Industrial
+                                            Properties</option>
+                                        <option
+                                            value="audi">Land</option>
+                                        <option value="audi">Special
+                                            Purpose
+                                            Properties</option>
+                                        <option
+                                            value="audi">Investment
+                                            Properties</option>
+                                        <option value="audi">Luxury
+                                            Properties</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="input-field">
-                            <span class="material-symbols-outlined">
-                                price_change
+                            <div class="input-field">
+                                <span
+                                    class="material-symbols-outlined">
+                                    price_change
                                 </span>
-                            <div class="input-container">
-                                <span>price range</span>
-                                <select id="cars" name="cars">
-                                    <option value="volvo">Select price range</option>
-                                    <option value="saab">$50,000-$200,000</option>
-                                    <option value="mercedes"> $200,000-$500,000</option>
-                                    <option value="mercedes">$500,000-$1m</option>
-                                    <option value="mercede$1m-$10m</option>
-                                    <option value="mercede$10m above</option>
-                                    
-                                </select>
-                            </div>
-                        </div>
-                        <div class="input-field">
-                            <span class="material-symbols-outlined">
-                                fullscreen_exit
-                                </span>
-                            <div class="input-container">
-                                <span>property size</span>
-                            <select id="cars" name="cars">
-                                <option value="volvo">Select property size</option>
-                                <option value="saab">under  1,000</option>
-                                <option value="saab">1,000 to 2,500 square feet</option>
-                                <option value="saab">2,500 to 5,000 square feet</option>
-                                <option value="saab">5,000 to 10,000 square feet</option>
-                                <option value="saab">above 10,000 square feet</option>
-                                
-                            </select>
-                            </div>
-                        </div>
-                        </form>
-                    </div>
+                                <div class="input-container">
+                                    <span>price range</span>
+                                    <select id="cars" name="cars">
+                                        <option value="volvo">Select
+                                            price range</option>
+                                        <option
+                                            value="saab">$50,000-$200,000</option>
+                                        <option value="mercedes">
+                                            $200,000-$500,000</option>
+                                        <option
+                                            value="mercedes">$500,000-$1m</option>
+                                        <option
+                                            value="mercede$1m-$10m</option>
+                                    <option value=" mercede$10m
+                                            above</option>
 
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="input-field">
+                                    <span
+                                        class="material-symbols-outlined">
+                                        fullscreen_exit
+                                    </span>
+                                    <div class="input-container">
+                                        <span>property size</span>
+                                        <select id="cars" name="cars">
+                                            <option
+                                                value="volvo">Select
+                                                property size</option>
+                                            <option value="saab">under
+                                                1,000</option>
+                                            <option value="saab">1,000
+                                                to 2,500 square
+                                                feet</option>
+                                            <option value="saab">2,500
+                                                to 5,000 square
+                                                feet</option>
+                                            <option value="saab">5,000
+                                                to 10,000 square
+                                                feet</option>
+                                            <option value="saab">above
+                                                10,000 square
+                                                feet</option>
 
-                    <div class="third-form">
-                        <a href="#" class="btn"><span>Become an agent</span></a>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button class="btn"><span class="material-symbols-outlined">
+search
+</span></button>
+                            </form>
+                        </div>
+
+                        <div class="third-form">
+                            <a href="#" class="btn"><span>Become an
+                                    agent</span></a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Hero secttion -->
+            </section>
+            <!-- Hero secttion -->
 
-        <!-- the latest category -->
-        <div class="discover">
-            <div class="discover-container container">
-                <div class="discover-heading">
-                    <h1>Popural Properties</h1>
-                    <h3>Discover Popural Properties</h3>
-                    <a href="#">view More <span class="material-symbols-outlined">
-                        arrow_forward
-                        </span></a>
+            <!-- the latest category -->
+            <div class="discover">
+                <div class="discover-container container">
+                    <div class="discover-heading">
+                        <h1>Popural Properties</h1>
+                        <h3>Discover Popural Properties</h3>
+                        <a href="#">view More <span
+                                class="material-symbols-outlined">
+                                arrow_forward
+                            </span></a>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <swiper-container class="mySwiper box-container"
+                        init="false">
+                        <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house1.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>4 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>1 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>10000
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$250,000</span></a>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house10.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>3 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>3 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>5000
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$170,000</span></a>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house4.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>2 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>2 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>1000
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$50,000</span></a>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house5.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>5 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>4 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>12000
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$290,000</span></a>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house6.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>3 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>2 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>900
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$25,000</span></a>
+                            </div>
+                        </swiper-slide>
+                    </swiper-container>
                 </div>
-                <br>
-                <br>
-                <br>
-                <swiper-container class="mySwiper box-container" init="false">
-                    <swiper-slide class="box">
-                        <div class="image-container">
-                            <img src="./photo/house1.jpg" alt="">
-                            <p class="house-cat">for sale</p>
-                        </div>
-                        <div class="discover-content">
-                            <h2>New Apartment Nice view</h2>
-                            <p><span class="material-symbols-outlined">
-                                pin_drop
-                                </span><b>No 35 olondon street</b></p>
-                            <div class="discover-details-row">
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        bed
-                                        </span>
-                                    <h4><span>4 </span>rm</h4>
-                                </div>
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        bathtub
-                                        </span>
-                                    <h4><span>1 </span>BR</h4>
-                                </div>
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        fullscreen
-                                        </span>
-                                    <h4><span>10000 </span>sqrft</h4>
-                                </div>
-                            </div>
-                            <a href="#" class="house-price-btn"><span class="material-symbols-outlined">
-                                sell
-                                </span><span>$250,000</span></a>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide class="box">
-                        <div class="image-container">
-                            <img src="./photo/house2.jpg" alt="">
-                            <p class="house-cat">for sale</p>
-                        </div>
-                        <div class="discover-content">
-                            <h2>New Apartment Nice view</h2>
-                            <p><span class="material-symbols-outlined">
-                                pin_drop
-                                </span><b>No 35 olondon street</b></p>
-                            <div class="discover-details-row">
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        bed
-                                        </span>
-                                    <h4><span>3 </span>rm</h4>
-                                </div>
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        bathtub
-                                        </span>
-                                    <h4><span>3 </span>BR</h4>
-                                </div>
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        fullscreen
-                                        </span>
-                                    <h4><span>5000 </span>sqrft</h4>
-                                </div>
-                            </div>
-                            <a href="#" class="house-price-btn"><span class="material-symbols-outlined">
-                                sell
-                                </span><span>$170,000</span></a>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide class="box">
-                        <div class="image-container">
-                            <img src="./photo/house4.jpg" alt="">
-                            <p class="house-cat">for sale</p>
-                        </div>
-                        <div class="discover-content">
-                            <h2>New Apartment Nice view</h2>
-                            <p><span class="material-symbols-outlined">
-                                pin_drop
-                                </span><b>No 35 olondon street</b></p>
-                            <div class="discover-details-row">
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        bed
-                                        </span>
-                                    <h4><span>2 </span>rm</h4>
-                                </div>
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        bathtub
-                                        </span>
-                                    <h4><span>2 </span>BR</h4>
-                                </div>
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        fullscreen
-                                        </span>
-                                    <h4><span>1000 </span>sqrft</h4>
-                                </div>
-                            </div>
-                            <a href="#" class="house-price-btn"><span class="material-symbols-outlined">
-                                sell
-                                </span><span>$50,000</span></a>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide class="box">
-                        <div class="image-container">
-                            <img src="./photo/house5.jpg" alt="">
-                            <p class="house-cat">for sale</p>
-                        </div>
-                        <div class="discover-content">
-                            <h2>New Apartment Nice view</h2>
-                            <p><span class="material-symbols-outlined">
-                                pin_drop
-                                </span><b>No 35 olondon street</b></p>
-                            <div class="discover-details-row">
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        bed
-                                        </span>
-                                    <h4><span>5 </span>rm</h4>
-                                </div>
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        bathtub
-                                        </span>
-                                    <h4><span>4 </span>BR</h4>
-                                </div>
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        fullscreen
-                                        </span>
-                                    <h4><span>12000 </span>sqrft</h4>
-                                </div>
-                            </div>
-                            <a href="#" class="house-price-btn"><span class="material-symbols-outlined">
-                                sell
-                                </span><span>$290,000</span></a>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide class="box">
-                        <div class="image-container">
-                            <img src="./photo/house6.jpg" alt="">
-                            <p class="house-cat">for sale</p>
-                        </div>
-                        <div class="discover-content">
-                            <h2>New Apartment Nice view</h2>
-                            <p><span class="material-symbols-outlined">
-                                pin_drop
-                                </span><b>No 35 olondon street</b></p>
-                            <div class="discover-details-row">
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        bed
-                                        </span>
-                                    <h4><span>3 </span>rm</h4>
-                                </div>
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        bathtub
-                                        </span>
-                                    <h4><span>2 </span>BR</h4>
-                                </div>
-                                <div class="discover-col">
-                                    <span class="material-symbols-outlined">
-                                        fullscreen
-                                        </span>
-                                    <h4><span>900 </span>sqrft</h4>
-                                </div>
-                            </div>
-                            <a href="#" class="house-price-btn"><span class="material-symbols-outlined">
-                                sell
-                                </span><span>$25,000</span></a>
-                        </div>
-                    </swiper-slide>
-                  </swiper-container>
             </div>
-        </div>
-        <!-- the latest category -->
+            <!-- the latest category -->
 
-
-        <!-- why choose us -->
-        <div class="choose">
-            <div class="container choose-container">
+            <!-- why choose us -->
+            <div class="choose">
+                <div class="container choose-container">
                     <div class="choose-heading">
                         <h4>Why choose us</h4>
-                        <h1>We provide latest properties for our valuable clients</h1>
+                        <h1>We provide latest properties for our
+                            valuable clients</h1>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium sit reprehenderit consequuntur, exercitationem libero harum aspernatur. Voluptas repellendus dolorum omnis optio ipsam repellat deleniti, consequuntur beatae tenetur magni, inventore accusantium.       
+                    <p>Lorem ipsum dolor sit amet consectetur,
+                        adipisicing elit. Laudantium sit reprehenderit
+                        consequuntur, exercitationem libero harum
+                        aspernatur. Voluptas repellendus dolorum omnis
+                        optio ipsam repellat deleniti, consequuntur
+                        beatae tenetur magni, inventore accusantium.
                     </p>
                     <div class="choose-image">
-                        <img src="./photo/choose.png" alt="">
+                        <img src="./photo/choose.png" alt>
                     </div>
                     <ul class="choose-list">
                         <li>
                             <span class="material-symbols-outlined">
                                 diversity_2
-                                </span>
+                            </span>
                             <div class="des">
                                 <h1>Budget friendly</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus assumenda asperiores rem porro ut corrupti! Tempore corrupti voluptas, dolor consequuntur quasi, dolore sapiente libero et velit odio </p>
+                                <p>Lorem ipsum dolor sit amet
+                                    consectetur, adipisicing elit.
+                                    Ducimus assumenda asperiores rem
+                                    porro ut corrupti! Tempore
+                                    corrupti voluptas, dolor
+                                    consequuntur quasi, dolore
+                                    sapiente libero et velit odio </p>
                             </div>
                         </li>
                         <li>
                             <span class="material-symbols-outlined">
                                 add_location_alt
-                                </span>
+                            </span>
                             <div class="des">
                                 <h1>Prime Location</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus assumenda asperiores rem porro ut corrupti! Tempore corrupti voluptas, dolor consequuntur quasi, dolore sapiente libero et velit odio </p>
+                                <p>Lorem ipsum dolor sit amet
+                                    consectetur, adipisicing elit.
+                                    Ducimus assumenda asperiores rem
+                                    porro ut corrupti! Tempore
+                                    corrupti voluptas, dolor
+                                    consequuntur quasi, dolore
+                                    sapiente libero et velit odio </p>
                             </div>
                         </li>
                         <li>
                             <span class="material-symbols-outlined">
                                 group_add
-                                </span>
+                            </span>
                             <div class="des">
                                 <h1>Trusted By Thousand</h1>
-                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus assumenda asperiores rem porro ut corrupti! Tempore corrupti voluptas, dolor consequuntur quasi, dolore sapiente libero et velit odio </p>
+                                <p>Lorem ipsum dolor sit amet
+                                    consectetur, adipisicing elit.
+                                    Ducimus assumenda asperiores rem
+                                    porro ut corrupti! Tempore
+                                    corrupti voluptas, dolor
+                                    consequuntur quasi, dolore
+                                    sapiente libero et velit odio </p>
                             </div>
                         </li>
                     </ul>
                 </div>
 
             </div>
-        </div>
         <!-- why choose us -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+        <!-- services section-->
+        <div class="service">
+            <div class="service-container container">
+                <div class="service-heading">
+                    <h1>Services</h1>
+                    <h3>We Focus mainly on </h3>
+                    <a href="#">view More <span
+                            class="material-symbols-outlined">
+                            arrow_forward
+                        </span></a>
+                </div>
+                <div class="service-row">
+                    <div class="service-col">
+                        <div class="service-image">
+                            <img src="./photo/service (2).png" alt>
+                        </div>
+                        <h2>buy a house</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Fugiat, provident.</p>
+                        <a href="#">get started</a>
+                    </div>
+                    <div class="service-col">
+                        <div class="service-image">
+                            <img src="./photo/service (3).png" alt>
+                        </div>
+                        <h2>rent a house</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Fugiat, provident.</p>
+                        <a href="#">get started</a>
+                    </div>
+                    <div class="service-col">
+                        <div class="service-image">
+                            <img src="./photo/service (1).png" alt>
+                        </div>
+                        <h2>sell a house</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur
+                            adipisicing elit. Fugiat, provident.</p>
+                        <a href="#">get started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- services section-->
+
+        <!-- the video -->
+
+        <div class="video">
+            <button id="playButton">
+                <span class="material-symbols-outlined">
+                    play_arrow
+                </span>
+            </button>
+
+            <div id="videoPopup">
+                <div class="videoContainer">
+                    <span class="closeButton"
+                        onclick="closeVideo()">×</span>
+                    <iframe id="videoFrame" width="560" height="315"
+                        src="./photo/47963416.mp4" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- the video -->
+
+        <section class="client">
+            <div class="client-container container">
+                <div class="client-header">
+                    <h1>Clients says</h1>
+                    <h3>See what our clients said</h3>
+                    <a href="#">view More <span
+                            class="material-symbols-outlined">
+                            arrow_forward
+                        </span></a>
+                </div>
+
+                <div class="client-content">
+                    <div class="swiper mySwiperto">
+                        <div class="swiper-wrapper">
+                            <div class="client-box swiper-slide">
+                                <div class="top-section">
+                                    <div class="client-img">
+                                        <img src="./photo/head2.jpg"
+                                            alt>
+                                    </div>
+                                    <div class="stars">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            grade
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star_half
+                                        </span>
+                                    </div>
+                                    <div class="client-name">
+                                        <h1>Dominic Chigozie</h1>
+                                        <h3>CEO DomindTech</h3>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <span
+                                        class="material-symbols-outlined top-qoute">
+                                        format_quote
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit.
+                                        Quam neque dolores corporis
+                                        vel? Eos inventore sed beatae,
+                                        expedita tempore nostrum.</p>
+                                    <span
+                                        class="material-symbols-outlined bottom-qoute">
+                                        format_quote
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="client-box swiper-slide">
+                                <div class="top-section">
+                                    <div class="client-img">
+                                        <img src="./photo/head1.jpg"
+                                            alt>
+                                    </div>
+                                    <div class="stars">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            grade
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star_half
+                                        </span>
+                                    </div>
+                                    <div class="client-name">
+                                        <h1>Dominic Chigozie</h1>
+                                        <h3>CEO DomindTech</h3>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <span
+                                        class="material-symbols-outlined top-qoute">
+                                        format_quote
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit.
+                                        Quam neque dolores corporis
+                                        vel? Eos inventore sed beatae,
+                                        expedita tempore nostrum.</p>
+                                    <span
+                                        class="material-symbols-outlined bottom-qoute">
+                                        format_quote
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="client-box swiper-slide">
+                                <div class="top-section">
+                                    <div class="client-img">
+                                        <img src="./photo/head3.jpeg"
+                                            alt>
+                                    </div>
+                                    <div class="stars">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            grade
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star_half
+                                        </span>
+                                    </div>
+                                    <div class="client-name">
+                                        <h1>Dominic Chigozie</h1>
+                                        <h3>CEO DomindTech</h3>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <span
+                                        class="material-symbols-outlined top-qoute">
+                                        format_quote
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit.
+                                        Quam neque dolores corporis
+                                        vel? Eos inventore sed beatae,
+                                        expedita tempore nostrum.</p>
+                                    <span
+                                        class="material-symbols-outlined bottom-qoute">
+                                        format_quote
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="client-box swiper-slide">
+                                <div class="top-section">
+                                    <div class="client-img">
+                                        <img src="./photo/head4.jpg"
+                                            alt>
+                                    </div>
+                                    <div class="stars">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            grade
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star_half
+                                        </span>
+                                    </div>
+                                    <div class="client-name">
+                                        <h1>Dominic Chigozie</h1>
+                                        <h3>CEO DomindTech</h3>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <span
+                                        class="material-symbols-outlined top-qoute">
+                                        format_quote
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit.
+                                        Quam neque dolores corporis
+                                        vel? Eos inventore sed beatae,
+                                        expedita tempore nostrum.</p>
+                                    <span
+                                        class="material-symbols-outlined bottom-qoute">
+                                        format_quote
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="client-box swiper-slide">
+                                <div class="top-section">
+                                    <div class="client-img">
+                                        <img src="./photo/head5.jpeg"
+                                            alt>
+                                    </div>
+                                    <div class="stars">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            grade
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star_half
+                                        </span>
+                                    </div>
+                                    <div class="client-name">
+                                        <h1>Dominic Chigozie</h1>
+                                        <h3>CEO DomindTech</h3>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <span
+                                        class="material-symbols-outlined top-qoute">
+                                        format_quote
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit.
+                                        Quam neque dolores corporis
+                                        vel? Eos inventore sed beatae,
+                                        expedita tempore nostrum.</p>
+                                    <span
+                                        class="material-symbols-outlined bottom-qoute">
+                                        format_quote
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="client-box swiper-slide">
+                                <div class="top-section">
+                                    <div class="client-img">
+                                        <img src="./photo/head6.jpg"
+                                            alt>
+                                    </div>
+                                    <div class="stars">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            grade
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star_half
+                                        </span>
+                                    </div>
+                                    <div class="client-name">
+                                        <h1>Dominic Chigozie</h1>
+                                        <h3>CEO DomindTech</h3>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <span
+                                        class="material-symbols-outlined top-qoute">
+                                        format_quote
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit.
+                                        Quam neque dolores corporis
+                                        vel? Eos inventore sed beatae,
+                                        expedita tempore nostrum.</p>
+                                    <span
+                                        class="material-symbols-outlined bottom-qoute">
+                                        format_quote
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="client-box swiper-slide">
+                                <div class="top-section">
+                                    <div class="client-img">
+                                        <img src="./photo/head1.jpg"
+                                            alt>
+                                    </div>
+                                    <div class="stars">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            grade
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star
+                                        </span>
+                                        <span
+                                            class="material-symbols-outlined">
+                                            star_half
+                                        </span>
+                                    </div>
+                                    <div class="client-name">
+                                        <h1>Dominic Chigozie</h1>
+                                        <h3>CEO DomindTech</h3>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <span
+                                        class="material-symbols-outlined top-qoute">
+                                        format_quote
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet,
+                                        consectetur adipisicing elit.
+                                        Quam neque dolores corporis
+                                        vel? Eos inventore sed beatae,
+                                        expedita tempore nostrum.</p>
+                                    <span
+                                        class="material-symbols-outlined bottom-qoute">
+                                        format_quote
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The newsletters-->
+        <div class="newsletters">
+            <div class="container newsletter-container">
+                <img src="./photo/newletter.png" alt="">
+
+                <form action="#" class="newsletterform">
+                    <h1>Don't Just find a House
+                        <span>Find a home!</span>
+                    </h1>
+                    <h4>Subscribe to our weekly Newsletter and receive updates via email</h4>
+                    <div class="newsletter-formgroup">
+                        <input type="email" placeholder="Email*" required>
+                        <button class="btn"><span class="material-symbols-outlined">
+                            send
+                            </span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- The newsletters-->
+
+        <div class="down-section">
+            <div class="container down-section-container">
+               <div class="footer-list">
+                <ul>
+                    <h1>Logo</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, distinctio.</p>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        location_on
+                        </span> Awka Anambra, Nigeria</a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                    
+                        phone_in_talk
+                        </span> +23470 4658 6037 </a></li>
+                        <li><a href="#"><span class="material-symbols-outlined">
+                            forward_to_inbox
+                            </span> chigozie@gmail.com</a></li>
+                    <div class="media-section">
+                        <a href="#"><img src="./photo/facebook.png" alt=""></a>
+                        <a href="#"><img src="./photo/twitter.png" alt=""></a>
+                        <a href="#"><img src="./photo/youtube.png" alt=""></a>
+                        <a href="#"><img src="./photo/linkedin.png" alt=""></a>
+                    </div>
+                </ul>
+                <ul>
+                    <h2>company</h2>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">All products</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Loction Map</a></li>
+                </ul>
+                <ul>
+                    <h2>Services</h2>
+                    <li><a href="#">Wish list</a></li>
+                    <li><a href="#">Order tracking</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Rentals</a></li>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Terms & condition</a></li>
+                    <li><a href="#">Promo offer</a></li>
+                </ul>
+                <ul>
+                    <h2>customer care</h2>
+                    <li class="uppercase"><a href="#">FAQ</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Hotline</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+               </div>
+               <div class="accepted-cards">
+                <h1>We accept</h1>
+                <div class="images-for-payments">
+                    <a href="#"><img src="./photo/paypal.png" alt=""></a>
+                    <a href="#"><img src="./photo/logo.png" alt=""></a>
+                    <a href="#"><img src="./photo/discover.png" alt=""></a>
+                    <a href="#"><img src="./photo/american-express.png" alt=""></a>
+                </div>
+               </div>
+            </div>
+        </div>
+        <footer>
+            <p><span>Copyright <a href="#">©domind</a></span> All Rights Reserved.</p>
+        </footer>
+
+
+
+        <!-- Swiper JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
         <script src="./js/script.js"></script>
         <script>
-            const swiperEl = document.querySelector('swiper-container')
+            const swiperEl = document.querySelector('.box-container')
             Object.assign(swiperEl, {
               slidesPerView: 1,
               spaceBetween: 10,
@@ -446,7 +1123,7 @@
                   spaceBetween: 20,
                 },
                 768: {
-                  slidesPerView: 3,
+                  slidesPerView: 2,
                   spaceBetween: 10,
                 },
                 1024: {
@@ -457,5 +1134,5 @@
             });
             swiperEl.initialize();
           </script>
-</body>
+    </body>
 </html>

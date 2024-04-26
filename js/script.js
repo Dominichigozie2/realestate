@@ -27,3 +27,64 @@ thirdBtn.addEventListener('click', () => {
 const buttons = document.querySelectorAll('.search-btn');
 
 buttons.forEach(button => { button.addEventListener('click', () => { buttons.forEach(btn => btn.classList.remove('active')); button.classList.add('active'); }); });
+
+
+const nav=document.querySelector('nav');
+window.addEventListener('scroll', function(){
+    if (window.scrollY > 0) {
+        nav.style.backgroundColor = '#fff';
+    }
+    nav.style.backgroundColor = '#0008';
+})      
+
+
+
+
+// Open video popup when play button is clicked
+document.getElementById('playButton').addEventListener('click', function() {
+    document.getElementById('videoPopup').style.display = 'block';
+  });
+  
+  // Close video popup
+  function closeVideo() {
+    document.getElementById('videoPopup').style.display = 'none';
+    // Stop video playback (optional)
+    var videoFrame = document.getElementById('videoFrame');
+    var videoSrc = videoFrame.src;
+    videoFrame.src = videoSrc;
+  }
+
+
+
+  var swiper = new Swiper(".mySwiperto", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    loop: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 150,
+      modifier: 2.5,
+      slideShadows: true,
+    },
+    autoplay:{
+        delay:5000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+      },
+      480: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      }
+    }
+  });
