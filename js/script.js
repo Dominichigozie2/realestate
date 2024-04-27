@@ -29,13 +29,7 @@ const buttons = document.querySelectorAll('.search-btn');
 buttons.forEach(button => { button.addEventListener('click', () => { buttons.forEach(btn => btn.classList.remove('active')); button.classList.add('active'); }); });
 
 
-const nav=document.querySelector('nav');
-window.addEventListener('scroll', function(){
-    if (window.scrollY > 0) {
-        nav.style.backgroundColor = '#fff';
-    }
-    nav.style.backgroundColor = '#0008';
-})      
+   
 
 
 
@@ -88,3 +82,39 @@ document.getElementById('playButton').addEventListener('click', function() {
       }
     }
   });
+
+
+
+
+  const bar = document.querySelector('#bars');
+
+  bar.addEventListener('click', () => {
+    const sectionnav = document.querySelector("nav");
+    const nav = document.querySelector('.side-nav');
+    nav.classList.toggle("active");
+    sectionnav.classList.toggle("active");
+    bar.innerHTML = nav.classList.contains('active') ? '<span class="material-symbols-outlined">close</span>' : '<span class="material-symbols-outlined">menu</span>';
+  })
+
+
+
+const sectionnav = document.querySelector("nav");
+const section = document.querySelector(".home");
+console.log(sectionnav);
+
+const appearOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px -200px 0px"
+};
+const appearOnScroll = new IntersectionObserver(function(entries,
+    appearOnScroll){
+entries.forEach(entry =>{
+    if(!entry.isIntersecting){
+      sectionnav.classList.add("active");
+    }else{
+      sectionnav.classList.remove("active");
+    }
+})
+},appearOptions);
+
+    appearOnScroll.observe(section);
