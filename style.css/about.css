@@ -117,7 +117,7 @@ nav{
         .nav-btn:hover{
             color: var(--primary-color);
         }
-        #bars{
+        #about-bars{
             color: var(--bgd-lit-100);
             display: none;
             cursor: pointer;
@@ -130,6 +130,7 @@ nav.backgroud{
 }
 nav.active{
     position: fixed;
+    box-shadow: 1px 12px 10px var(--col-300);
     animation: active .9s ease-in-out forwards;
 
     .nav-list{
@@ -156,14 +157,14 @@ nav.active{
 
 @keyframes active{
     to{
-        top: 0;
+        top: -.8rem;
         background: var(--primary-color);
     }
 }
 
 
 /* Side-bar */
-.side-nav{
+.about-side-nav{
     position: fixed;
     top: -100%;left: 0;
     width: 100%;
@@ -206,7 +207,7 @@ nav.active{
     }
 }
 
-.side-nav.active{
+.about-side-nav.active{
     top: 0;
     transition: all 500ms ease-in-out;
 }
@@ -247,256 +248,61 @@ nav.active{
 .btn:hover{
     color: var(--primary-color);
 }
-/* the home section starts */
-.home{
+
+
+
+/* Hero section */
+.about-hero{
     position: relative;
-    height: 90vh;
-    background-image: url(../photo/hero.jpg);
-    background-repeat: no-repeat;
+    background-image: url(../photo/home-bg.jpg);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    height: 50vh;
+    max-height: 70vh;
+    min-width: 30vh;
 
-    .home-container{
-        position: relative;
-        z-index: 1;
+    .about-page-container{
         display: flex;
-        color: var(--bgd-lit-100);
         flex-direction: column;
-        align-items: start;
-        justify-content: center;
-        height: 100%;width: 90%;
+        gap: 2rem;
+        height: 100%;
 
-        .home-content{
-            backdrop-filter: blur(15px);
+        .link-conatainer{
+            z-index: 10;
+            height: 100%;
             display: flex;
-            gap: 1rem;
             flex-direction: column;
-            width: 50%;
-            
-            h6{
-                font-size: 18px;
-                font-weight: 600;
-                color: var(--bgd-lit-200);
+            gap: 1rem;
+            align-items: center;
+            justify-content: center;
+            h1{ 
+                color: var(--color-lit-200);
+                font-size: 3rem;
                 text-transform: capitalize;
+                font-weight: 800;
             }
-            h1{
-                font-size: 66px;
-                line-height: normal;
-                text-transform: capitalize;
+            a{
+                font-weight: 800;
                 color: var(--design);
-            }
-            p{
-                font-size: 14px;
+                font-size: 24px;
                 font-weight: 600;
-                line-height: 20px;
-                color: var(--bgd-lit-200);
-            }
-        }
-
-        .search-section{
-            position: absolute;
-            bottom: -5rem;
-            width: 100%;
-            color: #4285F4;
-            /* background: red; */
-
-            .form-navigation{
-                width: fit-content;
-                background: var(--bgd-lit-100);
-                border-radius: 10px 10px 0 0;
-                
-                ul{
-                    display: flex;
-                    
-                    li{
-                        padding: 2rem 5rem;
-                        font-size: 14px;
-                        font-weight: 600;
-                        cursor: pointer;
-                        text-transform: capitalize;
-                        color: var(--primary-color);
-                        border-bottom: 5px solid var(--color-lit-100);
-                        transition: all 300ms ease-in-out;
-                    }
-                    li.active,
-                    li:hover{
-                        border-bottom: 5px solid var(--primary-color);
-                    }
-                }
-            }
-            .first-form{
-                background: var(--bgd-lit-100);
-                border-radius: 0 10px 10px 10px;
-                padding: 2rem;
-                width: 100%;
-                form{
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    
-                    gap: 1rem;
-                    .input-field{
-                        display: flex;
-                        align-items: center;
-                        padding:  0 1rem;
-                        border: 1px solid var(--bgd-lit-200);
-                        border-radius: 5px;
-                        .input-container{
-                            width: 100%;
-                            padding: 1rem;
-                            display: flex;
-                            flex-direction: column;
-                            gap: 1rem;
-                            span{
-                                font-size: 14px;
-                                font-weight: 600;
-                                color: var(--col-200);
-                            }
-                            select
-                            {
-                                width: 100%;
-                                padding: .5rem;
-                                border: none;
-                                font-size: 11px;
-                                font-weight: 400;
-                                color: var(--col-300);
-                                outline: none;
-                                background: transparent;
-                            }
-                            input{
-                                padding: .5rem;
-                                border: none;
-                                outline: none;
-                                background: transparent;
-                            }
-                            input::placeholder{
-                                color: var(--col-300);
-                                font-size: 11px;
-                            }
-                        }
-                    }
-                    button{
-                        padding: 1rem 4rem;
-                        border: 2px solid var(--bgd-lit-100);
-                        outline: none;
-                        background: var(--primary-color);
-                        cursor: pointer;
-
-                        span{
-                            color: var(--color-lit-100);
-                            font-weight: 900;
-                        }
-                        
-                    }
-                    button:hover{
-                        border: 2px solid var(--primary-color);
-                        span{
-                            color: var(--primary-color);
-                        }
-                    }
-                }
-
-            }
-            .second-form{
-                display: none;
-                background: var(--bgd-lit-100);
-                border-radius: 0 10px 10px 10px;
-                padding: 2rem;
-                width: 100%;
-                form{
-                    display: grid;
-                    grid-template-columns: repeat(4, 1fr);
-                    
-                    gap: 1rem;
-                    .input-field{
-                        display: flex;
-                        align-items: center;
-                        padding:  0 1rem;
-                        border: 1px solid var(--bgd-lit-200);
-                        border-radius: 5px;
-                        .input-container{
-                            padding: 1rem;
-                            width: 100%;
-                            display: flex;
-                            flex-direction: column;
-                            gap: 1rem;
-                            span{
-                                font-size: 14px;
-                                font-weight: 600;
-                                color: var(--col-200);
-                            }
-
-
-                            select
-                            {
-                                width: 100%;
-                                padding: .5rem;
-                                border: none;
-                                font-size: 11px;
-                                font-weight: 400;
-                                color: var(--col-300);
-                                outline: none;
-                                background: transparent;
-
-                                option{
-                                    padding: .5rem 0;
-                                }
-                            }
-                            input{
-                                width: 100%;
-                                padding: .5rem;
-                                border: none;
-                                outline: none;
-                                background: transparent;
-                            }
-                            input::placeholder{
-                                color: var(--col-300);
-                                font-size: 11px;
-                            }
-                        }
-                    }
-                    button{
-                        padding: 1rem 4rem;
-                        border: 2px solid var(--bgd-lit-100);
-                        outline: none;
-                        background: var(--primary-color);
-                        cursor: pointer;
-                        
-                        span{
-                            color: var(--color-lit-100);
-                            font-weight: 900;
-                        }
-                        
-                    }
-                    button:hover{
-                        border: 2px solid var(--primary-color);
-                        span{
-                            color: var(--primary-color);
-                        }
-                    }
-                }
-            }
-            .third-form{
-                display: none;
-                background: var(--bgd-lit-100);
-                width: 100%;
-                 padding: 4.7rem;
-                 border-radius: 0 10px 10px 10px;
+                text-transform: capitalize;
             }
         }
     }
 }
-.home::after{
+.about-hero::before{
     content: " ";
     position: absolute;
-    top: 0;left: 0;
-    width: 100%;height: 100%;
-    background: rgba(0, 0, 0, 0.463);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: rgba(0, 0, 0, .7);
 }
-/* the home section ends */
-
-
-
+/* Hero section */
 
 
 
@@ -688,7 +494,7 @@ nav.active{
 
 /* the choose section ends */
 .choose{
-    padding-top: 15rem;
+    padding-top: 10rem;
     padding-bottom: 5rem;
     background: var(--bgd-lit-100);
     
@@ -877,7 +683,7 @@ nav.active{
 
 
   /* the video section */
-  .video{
+  .video2{
     background-image: url(../photo/home-bg.jpg);
     position: relative;
     padding: 10rem 0;
@@ -886,14 +692,14 @@ nav.active{
     display: flex;
     justify-content: center;
   }
-  .video::before{
+  .video2::before{
     content: " ";
     position: absolute;
     left: 0;top: 0;
     width: 100%;height: 100%;
     background: rgba(0, 0, 0, 0.836);
   }
-  #videoPopup {
+  #videoPopup2 {
     display: none;
     position: fixed;
     z-index: 9999;
@@ -905,14 +711,14 @@ nav.active{
     overflow: auto;
   }
   
-  .videoContainer {
+  .videoContainer2 {
     position: relative;
     margin: 10% auto;
     width: 90%;
     height: 100%;
   }
   
-  #playButton{
+  #playButton2{
       font-weight: 600;
       padding: 1rem;
       border-radius: 50%;
@@ -941,12 +747,12 @@ nav.active{
         box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.479); }
   }
 
-  #videoFrame{
+  #videoFrame2{
     width: 80%;
     height: 60%;
   }
 
-  .closeButton {
+  .closeButton2 {
     color: #fff;
     font-size: 30px;
     font-weight: bold;
@@ -956,7 +762,7 @@ nav.active{
     cursor: pointer;
   }
   
-  .closeButton:hover {
+  .closeButton2:hover {
     color: #ccc;
   }
   /* the video section */
@@ -1328,19 +1134,11 @@ nav.active{
   @media(width < 1150px){
     nav{
         .nav-container{
-            #bars{
+            #about-bars{
                 display: flex;
             }
         }
     }
-    .home{
-    .home-container{
-    .home-content{
-        width: 100%;
-        backdrop-filter: blur(0);
-    }
-    }
-  }
  }
 
 
@@ -1369,31 +1167,6 @@ nav.active{
             .nav-list{
                 display: none;
             }
-        }
-    }
-    .home{
-        height: fit-content;
-        padding: 10rem 0;
-        .home-container{
-            gap: 5rem;
-        .search-section{
-            position: static;
-            .first-form{
-                form{
-                grid-template-columns: repeat(2, 1fr);       
-                }
-            }
-            .second-form{
-                form{
-                    grid-template-columns: repeat(2, 1fr);       
-                }
-            }
-            .third-form{
-                background: var(--bgd-lit-100);
-                border-radius: 0 0 10px 10px;
-            }
-
-        }
         }
     }
     .choose{
@@ -1426,16 +1199,6 @@ nav.active{
             }
         }
     }
-
-    .client{
-        .client-container{
-            .client-header{
-                h1{
-                    font-size: 30px;
-                }
-            }
-        }
-    }
     .down-section{
         .down-section-container{
             .footer-list{
@@ -1447,45 +1210,6 @@ nav.active{
  }
 
  @media(width < 550px){
-    .home{
-        height: fit-content;
-        padding: 10rem 0;
-        .home-container{
-            gap: 5rem;
-
-            .home-content{
-                h1{
-                    font-size: 43px;
-                }
-            }
-        .search-section{
-            position: static;
-            .form-navigation{
-                width: 100%;
-            }
-            .form-navigation{
-                ul{
-                    justify-content: space-between;
-                    li{
-                        padding: 1rem 2.5rem;
-                    }
-                }
-            }
-            .first-form{
-                border-radius: 0 0 10px 10px;     
-                form{
-                grid-template-columns: 1fr;  
-                }
-            }
-            .second-form{
-                border-radius: 0 0 10px 10px;     
-                form{
-                    grid-template-columns: 1fr;       
-                }
-            }
-        }
-        }
-    }
     .service{
         padding-top: 10rem;
         .service-container{
@@ -1497,11 +1221,7 @@ nav.active{
     }
     .discover{
         padding: 10rem 0 5rem 0;
-    }
-    .choose{
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }    
+    }   
  }
 
  @media(width < 490px){

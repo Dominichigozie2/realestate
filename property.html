@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com"
+            crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
+        <!-- the font and icon links -->
+
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+        <link rel="stylesheet" href="./style.css/property.css">
+    </head>
+</head>
+<body>
+    <nav class="about-nav">
+        <div class="container nav-container">
+            <div class="logo">Logo</div>
+            <ul class="nav-list">
+                <li class="list-item"><a href="./index.html">Home</a></li>
+                <li class="list-item"><a href="./about.html">About</a></li>
+                <li class="list-item active"><a href="./property.html">Properties</a></li>
+                <li class="list-item"><a href="#">Pages</a></li>
+                <li class="list-item"><a href="./agent.html">Agents</a></li>
+                <li class="list-item"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <a href="#" class="nav-btn btn"><span>Get
+                    started</span></a>
+                    <span class="material-symbols-outlined" id="about-bars">
+                        menu
+                        </span>
+        </div>
+    </nav>
+
+    <div class="about-side-nav">
+        <ul class="side-nav-list">
+            <li class="list-item"><a
+                    href="#">Home</a></li>
+            <li class="list-item active"><a href="#">About</a></li>
+            <li class="list-item"><a
+                    href="#">Properties</a></li>
+            <li class="list-item"><a href="#">Pages</a></li>
+            <li class="list-item"><a href="#">Agents</a></li>
+            <li class="list-item"><a href="#">Contact</a></li>
+
+        </ul>
+        <a href="#" class="nav-btn btn"><span>Get
+            started</span></a>
+    </div>
+    <div class="hero">
+        <div class="container about-page-container">
+            
+            <div class="link-conatainer">
+                <h1>properties</h1>
+                <a href="./index.html">home</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- the hero section ends -->
+
+
+
+    <!-- No I will be adding a grid system that will have two columns
+
+        1. the filter section
+        2. the properties
+     -->
+
+     <div class="property">
+        <div class="row">
+            <div class="col-2">
+                <h2>Filter</h2>
+                <form action="#">
+                    <div class="input-field span1">
+                        <label for="#">For How many</label>
+                        <select id="cars" name="cars">
+                            <option value="volvo">All</option>
+                            <option value="volvo">buy</option>
+                            <option value="volvo">Rent?</option>
+                        </select>
+                    </div>
+                    <div class="input-field span1">
+                        <label for="#">Bedroom</label>
+                        <select id="cars" name="cars">
+                            <option value="volvo">All</option>
+                            <option
+                                value="saab">1</option>
+                            <option value="mercedes">
+                                2</option>
+                            <option value="mercedes">
+                                3</option>
+                            <option value="mercedes">
+                                4</option>
+                            <option value="mercedes">
+                                5</option>
+                            <option value="mercedes">
+                                6</option>
+                        </select>
+                    </div>
+                    <div class="input-field span1">
+                        <label for="#">Bathroom</label>
+                        <select id="cars" name="cars">
+                            <option value="volvo">All</option>
+                            <option
+                                value="saab">1</option>
+                            <option value="mercedes">
+                                2</option>
+                            <option value="mercedes">
+                                3</option>
+                            <option value="mercedes">
+                                4</option>
+                            <option value="mercedes">
+                                5</option>
+                            <option value="mercedes">
+                                6</option>
+                        </select>
+                    </div>
+                    <div class="input-field span1">
+                        <label for="#">For How many</label>
+                        <select id="cars" name="cars">
+                            <option value="volvo">All</option>
+                            <option
+                                value="saab">1</option>
+                            <option value="mercedes">
+                                2</option>
+                            <option value="mercedes">
+                                3</option>
+                            <option value="mercedes">
+                                4</option>
+                            <option value="mercedes">
+                                5</option>
+                            <option value="mercedes">
+                                6</option>
+                        </select>
+                    </div>
+                    <div class="input-field span2">
+                        <label for="#">Location</label>
+                        <input type="text">
+                    </div>
+                    <div class="input-field span2">
+                        <label for="#">Property Type</label>
+                        <select>
+                            <option value="volvo">All type</option>
+                            <option
+                                value="saab">Residential
+                                Properties</option>
+                            <option
+                                value="mercedes">Commercial
+                                Properties</option>
+                            <option
+                                value="audi">Industrial
+                                Properties</option>
+                            <option
+                                value="audi">Land</option>
+                            <option value="audi">Special
+                                Purpose
+                                Properties</option>
+                            <option
+                                value="audi">Investment
+                                Properties</option>
+                            <option value="audi">Luxury
+                                Properties</option>
+                        </select>
+                    </div>
+                    <div class="input-field span2">
+                        <label for="#">Price range</label>
+                        <select id="cars" name="cars">
+                            <option value="volvo">Select
+                                price range</option>
+                            <option
+                                value="saab">$50,000-$200,000</option>
+                            <option value="mercedes">
+                                $200,000 -
+                                $500,000</option>
+                            <option value="audi"> $500,000
+                                to $1m</option>
+                            <option
+                                value="audi">$1m-$10m</option>
+                            <option value="audi">$10m
+                                above</option>
+                        </select>
+                    </div>
+                    <div class="input-field span2">
+                        <label for="#">Property size</label>
+                        <select id="cars" name="cars">
+                            <option value="volvo">Select
+                                property size</option>
+                            <option value="saab">under
+                                1,000</option>
+                            <option value="saab">1,000 to
+                                2,500 square feet</option>
+                            <option value="saab">2,500 to
+                                5,000 square feet</option>
+                            <option value="saab">5,000 to
+                                10,000 square
+                                feet</option>
+                            <option value="saab">above
+                                10,000 square
+                                feet</option>
+
+                        </select>
+                    </div>
+                    <button class="button"><span>filter now</span></button>
+                </form>
+            </div>
+            <div class="col-10">
+                <div class="property-container">
+                     <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house1.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>4 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>1 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>10000
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$250,000</span></a>
+                            </div>
+                        </swiper-slide>
+                     <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house4.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>4 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>1 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>10000
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$250,000</span></a>
+                            </div>
+                        </swiper-slide>
+                     <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house5.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>4 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>1 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>10000
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$250,000</span></a>
+                            </div>
+                        </swiper-slide>
+                     <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house6.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>4 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>1 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>10000
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$250,000</span></a>
+                            </div>
+                        </swiper-slide>
+                     <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house7.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>4 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>1 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>10000
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$250,000</span></a>
+                            </div>
+                        </swiper-slide>
+                     <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house8.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>4 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>1 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>10000
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$250,000</span></a>
+                            </div>
+                        </swiper-slide>
+                     <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house9.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>4 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>1 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>10000
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$250,000</span></a>
+                            </div>
+                        </swiper-slide>
+                     <swiper-slide class="box">
+                            <div class="image-container">
+                                <img src="./photo/house10.jpg" alt>
+                                <p class="house-cat">for sale</p>
+                            </div>
+                            <div class="discover-content">
+                                <h2>New Apartment Nice view</h2>
+                                <p><span
+                                        class="material-symbols-outlined">
+                                        pin_drop
+                                    </span><b>No 35 olondon
+                                        street</b></p>
+                                <div class="discover-details-row">
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bed
+                                        </span>
+                                        <h4><span>4 </span>rm</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            bathtub
+                                        </span>
+                                        <h4><span>1 </span>BR</h4>
+                                    </div>
+                                    <div class="discover-col">
+                                        <span
+                                            class="material-symbols-outlined">
+                                            fullscreen
+                                        </span>
+                                        <h4><span>10000
+                                            </span>sqrft</h4>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="house-price-btn"><span
+                                        class="material-symbols-outlined">
+                                        sell
+                                    </span><span>$250,000</span></a>
+                            </div>
+                        </swiper-slide>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <div class="down-section">
+        <div class="container down-section-container">
+           <div class="footer-list">
+            <ul>
+                <h1>Logo</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, distinctio.</p>
+                <li><a href="#"><span class="material-symbols-outlined">
+                    location_on
+                    </span> Awka Anambra, Nigeria</a></li>
+                <li><a href="#"><span class="material-symbols-outlined">
+                
+                    phone_in_talk
+                    </span> +23470 4658 6037 </a></li>
+                    <li><a href="#"><span class="material-symbols-outlined">
+                        forward_to_inbox
+                        </span> chigozie@gmail.com</a></li>
+                <div class="media-section">
+                    <a href="#"><img src="./photo/facebook.png" alt=""></a>
+                    <a href="#"><img src="./photo/twitter.png" alt=""></a>
+                    <a href="#"><img src="./photo/youtube.png" alt=""></a>
+                    <a href="#"><img src="./photo/linkedin.png" alt=""></a>
+                </div>
+            </ul>
+            <ul>
+                <h2>company</h2>
+                <li><a href="#">home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">All products</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Loction Map</a></li>
+            </ul>
+            <ul>
+                <h2>Services</h2>
+                <li><a href="#">Wish list</a></li>
+                <li><a href="#">Order tracking</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">Rentals</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Terms & condition</a></li>
+                <li><a href="#">Promo offer</a></li>
+            </ul>
+            <ul>
+                <h2>customer care</h2>
+                <li class="uppercase"><a href="#">FAQ</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Location</a></li>
+                <li><a href="#">Hotline</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+           </div>
+           <div class="accepted-cards">
+            <h1>We accept</h1>
+            <div class="images-for-payments">
+                <a href="#"><img src="./photo/paypal.png" alt=""></a>
+                <a href="#"><img src="./photo/logo.png" alt=""></a>
+                <a href="#"><img src="./photo/discover.png" alt=""></a>
+                <a href="#"><img src="./photo/american-express.png" alt=""></a>
+            </div>
+           </div>
+        </div>
+    </div>
+    <footer>
+        <p><span>Copyright <a href="#">©domind</a></span> All Rights Reserved.</p>
+    </footer>
+
+    <script src="./js/property.js"></script>
+</body>
+</html>

@@ -89,16 +89,21 @@ document.getElementById('playButton').addEventListener('click', function() {
   const bar = document.querySelector('#bars');
 
   bar.addEventListener('click', () => {
-    const sectionnav = document.querySelector("nav");
+    const sectionnav = document.querySelector(".home-nav");
     const nav = document.querySelector('.side-nav');
     nav.classList.toggle("active");
-    sectionnav.classList.toggle("active");
     bar.innerHTML = nav.classList.contains('active') ? '<span class="material-symbols-outlined">close</span>' : '<span class="material-symbols-outlined">menu</span>';
+
+    if (nav.classList.contains('active')) {
+      sectionnav.classList.add("backgroud");
+    } else {
+      sectionnav.classList.remove("backgroud");
+    }
   })
 
 
-
-const sectionnav = document.querySelector("nav");
+  const nav = document.querySelector('.side-nav');
+const sectionnav = document.querySelector(".home-nav");
 const section = document.querySelector(".home");
 console.log(sectionnav);
 
