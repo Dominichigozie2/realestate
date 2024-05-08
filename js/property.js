@@ -16,7 +16,7 @@
 
         const nav = document.querySelector('.about-side-nav');
         const sectionnav = document.querySelector(".about-nav");
-        const section = document.querySelector(".about-hero");
+        const section = document.querySelector(".hero");
 
         const appearOptions = {
             threshold: 0,

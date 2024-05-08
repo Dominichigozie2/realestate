@@ -724,4 +724,149 @@ nav.active{
      }
         }
     }
+    .property{
+        .row{
+            
+            .col-2{
+                padding-bottom: 3rem;
+                height: 100vh;
+                form{
+                    overflow-y: scroll;
+                    height: 90%;
+                    .span1{
+                        grid-column: span 2;
+                    }
+                    button{
+                        margin-bottom: 3rem;
+                        height: fit-content;
+                    }
+                }
+            }
+            .col-10{
+                padding: 1rem;
+                .property-container{
+                    gap: 1rem;
+                }
+            }
+        }
+    }
+    .down-section{
+        .down-section-container{
+            .footer-list{
+                flex-wrap: wrap;
+                gap: 3rem;
+            }
+        }
+    }
+}
+
+@media(width < 790px){
+    .property{
+        .row{
+            
+            .col-2{
+                grid-column: span 2;
+                padding-bottom: 3rem;
+                height: 100vh;
+            }
+            .col-10{
+                padding: 1rem;
+                grid-column: span 2;
+
+                .property-container{
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}
+@media(width < 690px){
+    .property{
+        .row{
+            grid-template-columns: 1fr;
+            .col-2{
+                position: static;
+                grid-column: span 2;
+                padding-bottom: 3rem;
+                height: fit-content;
+                
+                form{
+                    overflow-y:visible;
+
+                    .span1{
+                        grid-column: span 1;
+                    }
+                    .span2{
+                        grid-column: span 1;
+                    }
+                    .input-field{
+                        select,
+                        input{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .col-10{
+                padding: 1rem;
+                grid-column: span 2;
+
+                .property-container{
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}
+
+
+@media(width < 490px){
+    .down-section{
+        .down-section-container{
+            .accepted-cards{
+            .images-for-payments{
+                a{
+                    width: 20px;
+                    height: 20px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+            }
+        }
+    }
+ }
+
+@media(width < 399px){
+    .property{
+        .row{
+            grid-template-columns: 1fr;
+            .col-2{
+                position: static;
+                grid-column: span 2;
+                padding-bottom: 3rem;
+                height: fit-content;
+                
+                form{
+                    overflow-y:visible;
+
+                    .span1{
+                        grid-column: span 1;
+                    }
+                    .span2{
+                        grid-column: span 2;
+                    }
+                    .input-field{
+                        select,
+                        input{
+                            width: 100%;
+                        }
+                    }
+                }
+            }  
+            }  
+            }  
 }
