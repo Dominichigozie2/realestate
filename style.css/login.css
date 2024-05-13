@@ -1,0 +1,208 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --primary-color: #4285F4;
+    /* --primary-color-2: #74b0ff; */
+    --design: #e6c17d;
+    --design-100: #88734a;
+    --bgd-lit-100:#ffffff;
+    --bgd-lit-200:#e6f2ff;
+    --bgd-lit-300:#d1e7ff;
+
+    --col-100: rgb(0, 0, 0);
+    --col-200: rgb(0, 0, 0, 0.5);
+    --col-300: rgb(0, 0, 0, 0.3);
+
+    --color-lit-100: #ffffff;
+    --color-lit-200: #e9f3ff;
+    --color-lit-300: #cae5ff;
+}
+body{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal; 
+        background: var(--bgd-lit-200);
+    }
+.container{
+    width: 90%;
+    margin-inline: auto;
+}
+
+nav{
+    position: fixed;
+    z-index: 100;
+    left: 2rem;
+    .nav-container{
+        display: flex;
+        padding: 1rem 0;
+        align-items: center;
+
+        .logo{
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 700;
+            color: var(--color-lit-100);
+        }
+        ul{
+            padding: 0 0 0 10rem;
+
+            li{
+                a{
+                    text-transform: capitalize;
+                    color: var(--primary-color);
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+.login{ 
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../photo/login-image.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    position: relative;
+
+
+    .login-container{
+        padding-top: 30%;
+        display: flex;
+        position: relative;
+        z-index: 1;
+        gap: 2rem;
+        flex-direction: column;
+        color: var(--color-lit-200);
+
+        h2{
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: var(--bgd-lit-300);
+            line-height: 1px;
+        }
+        h1{
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 30px;
+            span{
+                font-size: 100px;
+                color: var(--primary-color);
+            }
+        }
+        p{
+            color: var(--bgd-lit-300);
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: capitalize;
+            a{
+                color: var(--primary-color);
+
+            }
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            .input-field{
+                position: relative;
+                display: flex;
+                border: 1px solid #ccc;
+                padding: 1.5rem .5rem .5rem;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .input-field input{
+                padding: .5rem;
+                width: 100%;
+                background: transparent;
+                outline: none;
+                border: none;
+                color: var(--bgd-lit-100);
+            }
+            .input-field input:focus ~ .input-field label{
+                color: red;
+            }
+            label{
+                left: 1rem;
+                position: absolute;
+            }
+            span{
+                position: absolute;
+                right: 1rem;
+                /* top: 10%; */
+            }
+            button{
+                padding: 1rem;
+                border-radius: 10px;
+                font-size: 14px;
+                background: var(--primary-color);
+                color: var(--color-lit-100);
+                font-weight: 600;
+                outline: none;
+                border: none;
+            }
+        }
+        h3{
+            text-transform: uppercase;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .goggle{
+            padding: 1rem;
+            width: 100%;
+            background: #0b18cc;
+            text-align: center;
+            color: var(--color-lit-200);
+            text-transform: capitalize;
+            text-transform: capitalize;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 10px;
+        }
+    }
+    .bdg-cover{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;height: 100%;
+        background: rgba(2, 0, 36, 0.738);
+        background: linear-gradient(62deg, rgba(2, 0, 36, 0.89) 0%, rgba(0, 0, 0, 0.89) 52%, rgba(0,212,255,0) 100%);
+    }
+}
+
+@media(width < 500px){
+    .login{ 
+        height: fit-content;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding-top: 10%;
+        padding: 0 0 10rem 0;
+
+        .login-container{
+            h2{
+                font-size: 11px;
+                line-height: 1px;
+            }
+            h1{
+                font-size: 22px;
+                line-height: 10px;
+            }
+            h3{
+                margin: 0;
+            }
+        }
+    }
+}
