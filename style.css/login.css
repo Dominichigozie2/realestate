@@ -21,6 +21,11 @@
     --color-lit-100: #ffffff;
     --color-lit-200: #e9f3ff;
     --color-lit-300: #cae5ff;
+
+    --valid: #4285F4;
+    --invalid: rgb(244, 25, 25);
+    --focused: #4285F4;
+    --blur: #ccc;
 }
 body{
         font-family: "Roboto", sans-serif;
@@ -36,9 +41,13 @@ body{
 nav{
     position: fixed;
     z-index: 100;
-    left: 2rem;
+    width: 100%;
+
     .nav-container{
         display: flex;
+        width: 95%;
+        justify-content: space-between;
+        margin-inline: auto;
         padding: 1rem 0;
         align-items: center;
 
@@ -54,8 +63,8 @@ nav{
             li{
                 a{
                     text-transform: capitalize;
-                    color: var(--primary-color);
-                    font-size: 14px;
+                    color: var(--color-lit-100);
+                    font-size: 18px;
                     font-weight: 600;
                 }
             }
@@ -119,7 +128,7 @@ nav{
             .input-field{
                 position: relative;
                 display: flex;
-                border: 1px solid #ccc;
+                border: 1px solid var(--blur);
                 padding: 1.5rem .5rem .5rem;
                 border-radius: 10px;
                 overflow: hidden;
@@ -132,8 +141,66 @@ nav{
                 border: none;
                 color: var(--bgd-lit-100);
             }
-            .input-field input:focus ~ .input-field label{
-                color: red;
+            .input-field:has(:focus){
+                --blur: var(--focused);
+            }
+
+
+            .input-field:has(:invalid:not(:focus)){
+                --blur: var(--invalid);
+
+                span,
+                label{
+                    color: var(--invalid);
+                }
+            }
+
+
+            .inputCap{
+                text-transform: capitalize;
+            }
+            .input-field input{
+                padding: .5rem;
+                width: 100%;
+                background: transparent;
+                outline: none;
+                border: none;
+                position: relative;
+                z-index: 1;
+                color: var(--bgd-lit-100);
+                font-size: 14px;
+                &::placeholder{
+                    color: transparent;
+                }
+            }
+            .input-field:has(:placeholder-shown:not(:focus)){
+                --blur: #ccc;
+                label{
+                    color: var(--blur);
+                    animation: none;
+                }
+
+                span{
+                    color: var(--blur);
+                }
+            }
+            .input-field:has(:not(:placeholder-shown)){
+                label{
+                    color: var(--focused);
+                    animation: toTop 250ms forwards;
+                }
+                span{
+                    color: var(--focused);
+                }
+            }
+            .input-field:has(:valid){
+                --blur: var(--valid);
+
+                span,
+                label{
+                    color: var(--valid);
+                }
+                
             }
             label{
                 left: 1rem;
@@ -144,7 +211,18 @@ nav{
                 right: 1rem;
                 /* top: 10%; */
             }
-            button{
+             button{
+                padding: 1rem;
+                border-radius: 10px;
+                font-size: 14px;
+                background: #9c9c9cd0;
+                color: #ccc;
+                font-weight: 600;
+                outline: none;
+                border: none;
+                transition: all 300ms ease;
+            }
+            &:valid button{
                 padding: 1rem;
                 border-radius: 10px;
                 font-size: 14px;
@@ -153,6 +231,12 @@ nav{
                 font-weight: 600;
                 outline: none;
                 border: none;
+                cursor: pointer;
+                transition: all 300ms ease;
+
+                &:hover{
+                    background: #71a8ff;
+                }
             }
         }
         h3{
@@ -182,7 +266,12 @@ nav{
         background: linear-gradient(62deg, rgba(2, 0, 36, 0.89) 0%, rgba(0, 0, 0, 0.89) 52%, rgba(0,212,255,0) 100%);
     }
 }
-
+@keyframes toTop{
+    to{
+        top: .5rem;
+        font-size: 10px;
+    }
+}
 @media(width < 500px){
     .login{ 
         height: fit-content;
@@ -204,5 +293,13 @@ nav{
                 margin: 0;
             }
         }
+        .bdg-cover{
+            background: rgba(2, 0, 36, 0.738);
+            background: linear-gradient(62deg, rgba(2, 0, 36, 0.89) 0%, rgba(0, 0, 0, 0.89) 52%, rgba(21, 78, 152, 0.856) 100%);
+        }
     }
+    
+        nav{
+            backdrop-filter: blur(15px);
+        }
 }

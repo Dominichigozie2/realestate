@@ -20,7 +20,7 @@
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-            <link rel="stylesheet" href="./style.css/login.css">
+            <link rel="stylesheet" href="./style.css/signup.css">
     </head>
     <body>
         <nav>
@@ -35,21 +35,35 @@
         <div class="login">
             <div class="bdg-cover"></div>
             <div class="container login-container">
-                <h2>Welcome back</h2>
-                <h1>Login to your account<span>.</span> </h1>
-                <p>Don't have an account yet ? <a href="./login.html">login</a></p>
+                <h2>Sign up for free</h2>
+                <h1>Create an account<span>.</span> </h1>
+                <p>already have an account ? <a href="./login.html">login</a></p>
                 <br>
                 <form action="#">
                     <div class="input-field">
+                        <label for="#">First Name</label>
+                        <input title="Please enter a Your FirstName must be atleast 3 char" placeholder="hoeoo" class="inputCap" type="text" required pattern="[a-zA-Z]{3,}">
+                        <span class="material-symbols-outlined">
+                            badge
+                            </span>
+                    </div>
+                    <div class="input-field">
+                        <label for="#">Last Name</label>
+                        <input title="Please enter a valid Lastname must be atleast 3 char" placeholder="hoeoo" type="text" class="inputCap" required pattern="[a-zA-Z]{3,}">
+                        <span class="material-symbols-outlined">
+                            id_card
+                            </span>
+                    </div>
+                    <div class="input-field">
                         <label for="#">Email</label>
-                        <input title="Please enter a valid email address" type="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        <input title="Please enter a valid email address" type="email" placeholder="hoeoo" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
                         <span class="material-symbols-outlined">
                             mail
                         </span>
                     </div>
                     <div class="input-field">
                         <label for="#">password</label>
-                        <input title="Must be at least 8 char" type="password" required pattern="[a-zA-Z0-9]{8,}">
+                        <input title="Must be atleast 8 char" type="password" placeholder="hoeoo" required pattern="[a-zA-Z0-9]{8,}">
                         <span class="material-symbols-outlined">
                             visibility_off
                         </span>
@@ -58,7 +72,14 @@
                             visibility
                         </span>
                     </div>
-                    <button type="submit">Login</button>
+                    <div class="input-field span2">
+                        <select id="cars" name="cars">
+                            <option>Signin as</option>
+                            <option class="default" value="saab">Buyer</option>
+                            <option class="default" value="saab">Seller</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="span2">Signup</button>
                 </form>
                 <h3>or</h3>
                 <a href="#" class="goggle">google</a>

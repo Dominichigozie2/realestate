@@ -33,21 +33,20 @@ buttons.forEach(button => { button.addEventListener('click', () => { buttons.for
 
 
 
-
-// Open video popup when play button is clicked
 document.getElementById('playButton').addEventListener('click', function() {
-    document.getElementById('videoPopup').style.display = 'block';
-  });
-  
-  // Close video popup
-  function closeVideo() {
-    document.getElementById('videoPopup').style.display = 'none';
-    // Stop video playback (optional)
-    var videoFrame = document.getElementById('videoFrame');
-    var videoSrc = videoFrame.src;
-    videoFrame.src = videoSrc;
-  }
+  var videoFrame = document.getElementById('videoFrame');
+  var videoSrc = 'https://www.youtube.com/embed/VIDEO_ID';  // Replace VIDEO_ID with your video ID
+  videoFrame.src = videoSrc;
+  document.getElementById('videoPopup').style.display = 'block';
+});
 
+function closeVideo() {
+  var videoPopup = document.getElementById('videoPopup');
+  videoPopup.style.display = 'none';
+  
+  var videoFrame = document.getElementById('videoFrame');
+  videoFrame.src = '';  // Clear the src attribute to stop the video
+}
 
 
   var swiper = new Swiper(".mySwiperto", {
