@@ -1,18 +1,19 @@
-// Open video popup when play button is clicked
+
+
 document.getElementById('playButton2').addEventListener('click', function() {
-    console.log('clicked');
+    var videoFrame = document.getElementById('videoFrame2');
+    var videoSrc = '../photo/47963416.mp4';  // Replace VIDEO_ID with your video ID
+    videoFrame.src = videoSrc;
     document.getElementById('videoPopup2').style.display = 'block';
   });
   
-  // Close video popup
   function closeVideo() {
-    document.getElementById('videoPopup2').style.display = 'none';
-    // Stop video playback (optional)
+    var videoPopup = document.getElementById('videoPopup2');
+    videoPopup.style.display = 'none';
+    
     var videoFrame = document.getElementById('videoFrame2');
-    var videoSrc = videoFrame.src;
-    videoFrame.src = videoSrc;
+    videoFrame.src = '';  // Clear the src attribute to stop the video
   }
-
 
 
 

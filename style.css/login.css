@@ -24,7 +24,7 @@
 
     --valid: #4285F4;
     --invalid: rgb(244, 25, 25);
-    --focused: #4285F4;
+    --focused: rgb(237, 255, 148);
     --blur: #ccc;
 }
 body{
@@ -52,11 +52,17 @@ nav{
         align-items: center;
 
         .logo{
-            text-transform: uppercase;
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--color-lit-100);
+            width: 100px;
+            height: 50px;
+
+            img{
+                width: 100px;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
         }
+
         ul{
             padding: 0 0 0 10rem;
 

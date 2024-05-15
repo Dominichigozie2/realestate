@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
+    <link rel="stylesheet" href="./style.css/loader.css">
     <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="./photo/favicon.png" type="image/x-icon">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com"
@@ -21,9 +23,19 @@
 <link rel="stylesheet" href="style.css/about.css">
 </head>
 <body>
+
+     <!-- The loader -->
+     <div class="loader">
+        <div class="loader-container center">
+            <div class="ring"></div>
+            <span>loading...</span>
+        </div>
+    </div>
+    <!-- The loader -->
+
     <nav class="about-nav">
         <div class="container nav-container">
-            <div class="logo">Logo</div>
+            <div class="logo"><img src="./photo/logo1 (2).png" alt=""></div>
             <ul class="nav-list">
                 <li class="list-item"><a
                         href="./index.html">Home</a></li>
@@ -423,9 +435,7 @@
             <div class="videoContainer2">
                 <span class="closeButton2"
                     onclick="closeVideo()">×</span>
-                <iframe id="videoFrame2" width="560" height="315"
-                    src="./photo/47963416.mp4" frameborder="0"
-                    allowfullscreen></iframe>
+                    <iframe id="videoFrame2" width="90%" height="90%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -496,6 +506,8 @@
         <p><span>Copyright <a href="#">©domind</a></span> All Rights Reserved.</p>
     </footer>
 
+     <!-- Swiper JS -->
+     <script src="./js/loader.js"></script>
     <!-- Swiper JS -->
     <script src="./js/about.js"></script>
         <script

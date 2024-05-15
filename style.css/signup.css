@@ -25,7 +25,7 @@
 
     --valid: #4285F4;
     --invalid: rgb(244, 25, 25);
-    --focused: #4285F4;
+    --focused: rgb(237, 255, 148);
     --blur: #ccc;
 }
 body{
@@ -53,11 +53,17 @@ nav{
         align-items: center;
 
         .logo{
-            text-transform: uppercase;
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--color-lit-100);
+            width: 100px;
+            height: 50px;
+
+            img{
+                width: 100px;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
         }
+
         ul{
             padding: 0 0 0 10rem;
 
@@ -201,7 +207,7 @@ nav{
                     color: var(--focused);
                 }
             }
-            .input-field:has(:valid){
+            .input-field:has(input:valid){
                 --blur: var(--valid);
 
                 span,
@@ -234,6 +240,10 @@ nav{
             .span2{
                 grid-column: span 2;
             }
+            &:valid .input-field:has(.default){
+                --blur: var(--valid);
+            }
+
             &:valid button{
                 padding: 1rem;
                 border-radius: 10px;

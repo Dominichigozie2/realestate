@@ -33,9 +33,10 @@ buttons.forEach(button => { button.addEventListener('click', () => { buttons.for
 
 
 
+
 document.getElementById('playButton').addEventListener('click', function() {
   var videoFrame = document.getElementById('videoFrame');
-  var videoSrc = 'https://www.youtube.com/embed/VIDEO_ID';  // Replace VIDEO_ID with your video ID
+  var videoSrc = '../photo/47963416.mp4';  // Replace VIDEO_ID with your video ID
   videoFrame.src = videoSrc;
   document.getElementById('videoPopup').style.display = 'block';
 });

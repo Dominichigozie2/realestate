@@ -5,6 +5,11 @@
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+
+        <link rel="stylesheet" href="./style.css/loader.css">
+
+        <link rel="shortcut icon" href="./photo/favicon.png" type="image/x-icon">
+
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -22,9 +27,21 @@
         <link rel="stylesheet" href="style.css/style.css">
     </head>
     <body>
+
+        <!-- The loader -->
+        <div class="loader">
+            <div class="loader-container center">
+                <div class="ring"></div>
+                <span>loading...</span>
+            </div>
+        </div>
+        <!-- The loader -->
+
+
+        
         <nav class="home-nav">
             <div class="container nav-container">
-                <div class="logo">Logo</div>
+                <div class="logo"><img src="./photo/logo1 (2).png" alt=""></div>
                 <ul class="nav-list">
                     <li class="list-item active"><a
                             href="#">Home</a></li>
@@ -657,9 +674,7 @@ search
                 <div class="videoContainer">
                     <span class="closeButton"
                         onclick="closeVideo()">×</span>
-                    <iframe id="videoFrame" width="560" height="315"
-                        src="./photo/47963416.mp4" frameborder="0"
-                        allowfullscreen></iframe>
+                        <iframe id="videoFrame" width="560" height="315" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -1118,6 +1133,7 @@ search
 
 
         <!-- Swiper JS -->
+        <script src="./js/loader.js"></script>
         <script
             src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script
