@@ -190,6 +190,7 @@ nav{
                     color: var(--blur);
                 }
             }
+
             .input-field:has(:not(:placeholder-shown)){
                 label{
                     color: var(--focused);
@@ -199,6 +200,7 @@ nav{
                     color: var(--focused);
                 }
             }
+            
             .input-field:has(:valid){
                 --blur: var(--valid);
 

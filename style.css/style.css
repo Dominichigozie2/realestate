@@ -257,7 +257,7 @@ nav.active{
 /* the home section starts */
 .home{
     position: relative;
-    height: 90vh;
+    height: 100vh;
     background-image: url(../photo/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -303,7 +303,7 @@ nav.active{
 
         .search-section{
             position: absolute;
-            bottom: -5rem;
+            bottom: -10rem;
             width: 100%;
             color: #4285F4;
             /* background: red; */
